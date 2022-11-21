@@ -6,12 +6,14 @@ const info = document.getElementById("info");
 
 button.onmousedown = () => {
     
+    if (zivoty.innerHTML > 0 && zivoty2.innerHTML > 0) {
+        div.style.left = "200px";
+        zivoty2.innerHTML--;
+    }
+
     if (zivoty2.innerHTML <= 0) {
         info.innerHTML = "Nepřítel zemřel";
         clearInterval(interval);
-    } else if (zivoty.innerHTML > 0) {
-        div.style.left = "200px";
-        zivoty2.innerHTML--;
     }
 }
 
