@@ -1,40 +1,53 @@
-#div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#div2 {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    position: absolute;
-    left: 300px;
+#pokemon {
+  background: url("../img/pikachu.png") no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
 }
 
-#zivoty {
-    position: absolute;
-    top: 100px;
+#pokemon2 {
+  background: url("../img/mewtwo.png") no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 400px;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
 }
 
-#zivoty2 {
-    position: absolute;
-    top: 100px;
-    left: 300px;
+#lives {
+  position: absolute;
+  top: 301px;
+  left: 20px;
 }
 
-#button {
-    position: absolute;
-    top: 130px;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid black;
-    background-color: white;
+#lives2 {
+  position: absolute;
+  top: 301px;
+  left: 400px;
+}
+
+#attack {
+  position: absolute;
+  top: 330px;
+  left: 20px;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: white;
 }
 
 #info {
     position: absolute;
-    top: 200px;
+    top: 380px;
+    left: 20px;
 }
