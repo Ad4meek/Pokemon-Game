@@ -6,24 +6,24 @@ const info = document.getElementById("info");
 
 attack.onmousedown = () => {
   if (lives.innerHTML > 0 && lives2.innerHTML > 0) {
-    pokemon.style.left = "100px";
+    pokemon.style.left = "45%";
     lives2.innerHTML--;
   }
 
   if (lives2.innerHTML <= 0) {
-    info.innerHTML = "Enemy died";
+    info.innerHTML = "ENEMY DIED";
     clearInterval(interval);
   }
 };
 
 attack.onmouseup = () => {
-    pokemon.style.left = "20px";
+    pokemon.style.left = "25%";
 };
 
 const interval = setInterval(() => {
     lives.innerHTML--;
   if (lives.innerHTML <= 0) {
-    info.innerHTML = "You died";
+    info.innerHTML = "YOU DIED";
     clearInterval(interval);
   }
 }, 500);

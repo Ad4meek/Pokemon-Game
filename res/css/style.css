@@ -1,53 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  background: url("../img/battlebackground.png") no-repeat;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+}
+
 #pokemon {
   background: url("../img/pikachu.png") no-repeat;
+  background-size: contain;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%, -50%);
   height: 300px;
   width: 300px;
-  background-size: contain;
 }
 
 #pokemon2 {
   background: url("../img/mewtwo.png") no-repeat;
+  background-size: contain;
   position: absolute;
-  top: 20px;
-  left: 400px;
+  top: 50%;
+  left: 75%;
+  transform: translate(-75%, -50%);
   height: 300px;
   width: 300px;
-  background-size: contain;
 }
 
 #lives {
   position: absolute;
-  top: 301px;
-  left: 20px;
+  top: 70%;
+  left: 25%;
+  transform: translate(-25%, -70%);
 }
 
 #lives2 {
   position: absolute;
-  top: 301px;
-  left: 400px;
+  top: 70%;
+  left: 75%;
+  transform: translate(-75%, -70%);
 }
 
 #attack {
   position: absolute;
-  top: 330px;
-  left: 20px;
-  border-radius: 4px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  border-radius: 50%;
   padding: 10px;
-  border: 1px solid black;
-  background-color: white;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(to right, #B2FEAC, #6BEECE);
 }
 
 #info {
-    position: absolute;
-    top: 380px;
-    left: 20px;
+  position: absolute;
+  font-size: 150%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
 }
