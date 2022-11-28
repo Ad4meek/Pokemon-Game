@@ -6,7 +6,7 @@ const info = document.getElementById("info");
 
 attack.onmousedown = () => {
   if (lives.innerHTML > 0 && lives2.innerHTML > 0) {
-    pokemon.style.left = "45%";
+    pokemon.style.left = "20%";
     lives2.innerHTML--;
   }
 
@@ -17,7 +17,7 @@ attack.onmousedown = () => {
 };
 
 attack.onmouseup = () => {
-    pokemon.style.left = "25%";
+    pokemon.style.left = "13%";
 };
 
 const interval = setInterval(() => {
