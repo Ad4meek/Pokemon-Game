@@ -26,7 +26,7 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  top: 37%;
+  bottom: 31%;
   left: 14%;
   height: 300px;
   width: 300px;
@@ -37,7 +37,7 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  top: 37%;
+  bottom: 31%;
   left: 66%;
   height: 300px;
   width: 300px;
