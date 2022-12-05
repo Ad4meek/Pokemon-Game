@@ -11,7 +11,67 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.container {
+/* Pokemon Site */
+
+#pokemonSite {
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#pokemon {
+  background: url("../img/mainpikachu.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  height: 500px;
+  width: 500px;
+}
+
+#map {
+  position: absolute;
+  top: 85%;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 50px;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 250%;
+  background: linear-gradient(to right, #A2DB95, #24CCAA);
+}
+
+#cp {
+  color: black;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  border: none;
+  padding: 1rem 2rem;
+  color: black;
+  font-size: 250%;
+}
+
+#powerUp {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  border-radius: 50px;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 250%;
+  background: linear-gradient(to right, #A2DB95, #24CCAA);
+}
+
+/* Battle Site */
+
+#battleSite {
+  display: none;
   background: url("../img/battlebackground.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -21,7 +81,8 @@ body {
   position: relative;
 }
 
-#pokemon {
+#myPokemon {
+  display: block;
   background: url("../img/pikachu.png") no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -32,7 +93,20 @@ body {
   width: 300px;
 }
 
-#pokemon2 {
+#myPokemonDeath {
+  display: none;
+  background: url("../img/pikachu2.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 26%;
+  left: 16%;
+  height: 300px;
+  width: 300px;
+}
+
+#enemyPokemon {
+  display: block;
   background: url("../img/mewtwo.png") no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -43,7 +117,19 @@ body {
   width: 300px;
 }
 
-#lives {
+#enemyPokemonDeath {
+  display: none;
+  background: url("../img/mewtwo2.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 31%;
+  left: 66%;
+  height: 300px;
+  width: 300px;
+}
+
+#myHealth {
   position: absolute;
   top: 80%;
   left: 25%;
@@ -53,7 +139,7 @@ body {
   font-weight: 700;
 }
 
-#lives2 {
+#enemyHealth {
   position: absolute;
   top: 80%;
   left: 75%;
@@ -63,7 +149,7 @@ body {
   font-weight: 700;
 }
 
-#attack {
+#attackButton {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -76,7 +162,7 @@ body {
   background: linear-gradient(to right, #A2DB95, #24CCAA);
 }
 
-#info {
+#battleInfo {
   position: absolute;
   font-size: 300%;
   top: 70%;
