@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* Pokemon Site */
@@ -46,7 +46,7 @@ body {
   padding: 1rem 2rem;
   color: white;
   font-size: 250%;
-  background: linear-gradient(to right, #A2DB95, #24CCAA);
+  background: linear-gradient(to right, #a2db95, #24ccaa);
 }
 
 #cp {
@@ -70,7 +70,31 @@ body {
   padding: 1rem 2rem;
   color: white;
   font-size: 250%;
-  background: linear-gradient(to right, #A2DB95, #24CCAA);
+  background: linear-gradient(to right, #a2db95, #24ccaa);
+}
+
+/* Map Site */
+
+#mapSite {
+  display: none;
+  background: url("../img/mapSiteBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#firstPokemon {
+  background: url("../img/mewtwo.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  top: 44%;
+  left: 18%;
+  height: 100px;
+  width: 100px;
 }
 
 /* Battle Site */
@@ -164,7 +188,7 @@ body {
   padding: 1rem 2rem;
   color: white;
   font-size: 250%;
-  background: linear-gradient(to right, #A2DB95, #24CCAA);
+  background: linear-gradient(to right, #a2db95, #24ccaa);
 }
 
 #battleInfo {
@@ -175,15 +199,16 @@ body {
   transform: translate(-50%, -70%);
 }
 
-#back {
+#backFromBattle,
+#backFromMap {
   position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -80%);
+  top: 85%;
+  right: 50%;
+  transform: translateX(50%);
   border-radius: 50px;
   border: none;
   padding: 1rem 2rem;
   color: white;
   font-size: 250%;
-  background: linear-gradient(to right, #A2DB95, #24CCAA);
+  background: linear-gradient(to right, #a2db95, #24ccaa);
 }
