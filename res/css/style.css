@@ -15,7 +15,7 @@ body {
 
 #pokemonSite {
   display: block;
-  background: url("../img/pokemonbackground.png");
+  background: url("../img/pokemonSiteBackground.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -77,7 +77,7 @@ body {
 
 #battleSite {
   display: none;
-  background: url("../img/battlebackground.png");
+  background: url("../img/battleSiteBackground.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -100,7 +100,7 @@ body {
 
 #myPokemonDeath {
   display: none;
-  background: url("../img/pikachu2.png") no-repeat;
+  background: url("../img/pikachuDeath.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -124,7 +124,7 @@ body {
 
 #enemyPokemonDeath {
   display: none;
-  background: url("../img/mewtwo2.png") no-repeat;
+  background: url("../img/mewtwoDeath.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
