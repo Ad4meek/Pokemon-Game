@@ -17,6 +17,7 @@ const back = document.getElementById("back");
 back.onclick = () => {
   pokemonSite.style.display = "block";
   battleSite.style.display = "none";
+  clearInterval(interval);
 }
 
 let interval
@@ -24,6 +25,13 @@ let interval
 map.onclick = () => {
   pokemonSite.style.display = "none";
   battleSite.style.display = "block"; 
+  myHealth.innerHTML = 20;
+  enemyHealth.innerHTML = 20;
+  myPokemonDeath.style.display = "none"
+  myPokemon.style.display = "block"
+  enemyPokemonDeath.style.display = "none"
+  enemyPokemon.style.display = "block"
+  battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
