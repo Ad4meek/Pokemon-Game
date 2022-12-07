@@ -226,7 +226,7 @@ body {
   width: 300px;
 }
 
-#firstEnemyPokemon {
+#thirdEnemyPokemon {
   display: block;
   background: url("../img/ratata.png") no-repeat;
   background-size: contain;
@@ -238,7 +238,7 @@ body {
   width: 300px;
 }
 
-#firstEnemyPokemonDeath {
+#thirdEnemyPokemonDeath {
   display: none;
   background: url("../img/ratataDeath.png") no-repeat;
   background-size: contain;
@@ -250,7 +250,7 @@ body {
   width: 300px;
 }
 
-#firstEnemyPokemon {
+#bossEnemyPokemon {
   display: block;
   background: url("../img/ratata.png") no-repeat;
   background-size: contain;
@@ -262,7 +262,7 @@ body {
   width: 300px;
 }
 
-#firstEnemyPokemonDeath {
+#bossEnemyPokemonDeath {
   display: none;
   background: url("../img/ratataDeath.png") no-repeat;
   background-size: contain;
