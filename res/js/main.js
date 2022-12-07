@@ -22,11 +22,17 @@ const battleSite = document.getElementById("battleSite");
 const myPokemon = document.getElementById("myPokemon");
 const myPokemonDeath = document.getElementById("myPokemonDeath");
 const firstEnemyPokemon = document.getElementById("firstEnemyPokemon");
-const firstEnemyPokemonDeath = document.getElementById("firstEnemyPokemonDeath");
+const firstEnemyPokemonDeath = document.getElementById(
+  "firstEnemyPokemonDeath"
+);
 const secondEnemyPokemon = document.getElementById("secondEnemyPokemon");
-const secondEnemyPokemonDeath = document.getElementById("secondEnemyPokemonDeath");
+const secondEnemyPokemonDeath = document.getElementById(
+  "secondEnemyPokemonDeath"
+);
 const thirdEnemyPokemon = document.getElementById("thirdEnemyPokemon");
-const thirdEnemyPokemonDeath = document.getElementById("thirdEnemyPokemonDeath");
+const thirdEnemyPokemonDeath = document.getElementById(
+  "thirdEnemyPokemonDeath"
+);
 const bossEnemyPokemon = document.getElementById("bossEnemyPokemon");
 const bossEnemyPokemonDeath = document.getElementById("bossEnemyPokemonDeath");
 const myHealth = document.getElementById("myHealth");
@@ -41,16 +47,15 @@ backFromMap.onclick = () => {
   mapSite.style.display = "none";
   pokemonSite.style.display = "block";
   battleSite.style.display = "none";
-}
+};
 
 map.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "block";
   battleSite.style.display = "none";
-}
+};
 
 let interval;
-
 
 firstPokemon.onclick = () => {
   pokemonSite.style.display = "none";
@@ -62,6 +67,12 @@ firstPokemon.onclick = () => {
   myPokemon.style.display = "block";
   firstEnemyPokemonDeath.style.display = "none";
   firstEnemyPokemon.style.display = "block";
+  secondEnemyPokemonDeath.style.display = "none";
+  secondEnemyPokemon.style.display = "none";
+  thirdEnemyPokemonDeath.style.display = "none";
+  thirdEnemyPokemon.style.display = "none";
+  bossEnemyPokemonDeath.style.display = "none";
+  bossEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
@@ -82,8 +93,14 @@ secondPokemon.onclick = () => {
   enemyHealth.innerHTML = 20;
   myPokemonDeath.style.display = "none";
   myPokemon.style.display = "block";
+  firstEnemyPokemonDeath.style.display = "none";
+  firstEnemyPokemon.style.display = "none";
   secondEnemyPokemonDeath.style.display = "none";
   secondEnemyPokemon.style.display = "block";
+  thirdEnemyPokemonDeath.style.display = "none";
+  thirdEnemyPokemon.style.display = "none";
+  bossEnemyPokemonDeath.style.display = "none";
+  bossEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
@@ -104,8 +121,14 @@ thirdPokemon.onclick = () => {
   enemyHealth.innerHTML = 20;
   myPokemonDeath.style.display = "none";
   myPokemon.style.display = "block";
+  firstEnemyPokemonDeath.style.display = "none";
+  firstEnemyPokemon.style.display = "none";
+  secondEnemyPokemonDeath.style.display = "none";
+  secondEnemyPokemon.style.display = "none";
   thirdEnemyPokemonDeath.style.display = "none";
   thirdEnemyPokemon.style.display = "block";
+  bossEnemyPokemonDeath.style.display = "none";
+  bossEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
@@ -126,6 +149,12 @@ bossPokemon.onclick = () => {
   enemyHealth.innerHTML = 20;
   myPokemonDeath.style.display = "none";
   myPokemon.style.display = "block";
+  firstEnemyPokemonDeath.style.display = "none";
+  firstEnemyPokemon.style.display = "none";
+  secondEnemyPokemonDeath.style.display = "none";
+  secondEnemyPokemon.style.display = "none";
+  thirdEnemyPokemonDeath.style.display = "none";
+  thirdEnemyPokemon.style.display = "none";
   bossEnemyPokemonDeath.style.display = "none";
   bossEnemyPokemon.style.display = "block";
   battleInfo.innerHTML = "";
@@ -138,6 +167,10 @@ bossPokemon.onclick = () => {
       myPokemonDeath.style.display = "block";
     }
   }, 500);
+  if (enemyHealth.innerHTML <= 0) {
+    bossEnemyPokemonDeath.style.display = "block";
+    bossEnemyPokemon.style.display = "none";
+  }
 };
 
 // Battle Site
@@ -152,7 +185,6 @@ attackButton.onmousedown = () => {
   if (enemyHealth.innerHTML <= 0) {
     battleInfo.innerHTML = "ENEMY DIED";
     clearInterval(interval);
-    
   }
 };
 

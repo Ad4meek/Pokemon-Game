@@ -179,7 +179,7 @@ body {
 }
 
 #firstEnemyPokemon {
-  display: block;
+  display: none;
   background: url("../img/ratata.png") no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -203,7 +203,7 @@ body {
 }
 
 #secondEnemyPokemon {
-  display: block;
+  display: none;
   background: url("../img/snorlax.png") no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -227,7 +227,7 @@ body {
 }
 
 #thirdEnemyPokemon {
-  display: block;
+  display: none;
   background: url("../img/dragonite.png") no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -251,7 +251,7 @@ body {
 }
 
 #bossEnemyPokemon {
-  display: block;
+  display: none;
   background: url("../img/mewtwo.png") no-repeat;
   background-size: contain;
   background-position: bottom;
