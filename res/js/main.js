@@ -19,7 +19,6 @@ const bossPokemon = document.getElementById("bossPokemon");
 const stardustChest = document.getElementById("stardustChest");
 
 const battleSite = document.getElementById("battleSite");
-
 const myPokemon = document.getElementById("myPokemon");
 const myPokemonDeath = document.getElementById("myPokemonDeath");
 const firstEnemyPokemon = document.getElementById("firstEnemyPokemon");

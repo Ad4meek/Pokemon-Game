@@ -228,7 +228,7 @@ body {
 
 #thirdEnemyPokemon {
   display: block;
-  background: url("../img/ratata.png") no-repeat;
+  background: url("../img/dragonite.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -240,7 +240,7 @@ body {
 
 #thirdEnemyPokemonDeath {
   display: none;
-  background: url("../img/ratataDeath.png") no-repeat;
+  background: url("../img/dragoniteDeath.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -252,7 +252,7 @@ body {
 
 #bossEnemyPokemon {
   display: block;
-  background: url("../img/ratata.png") no-repeat;
+  background: url("../img/mewtwo.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -264,7 +264,7 @@ body {
 
 #bossEnemyPokemonDeath {
   display: none;
-  background: url("../img/ratataDeath.png") no-repeat;
+  background: url("../img/mewtwoDeath.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
