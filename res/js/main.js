@@ -55,6 +55,13 @@ map.onclick = () => {
   battleSite.style.display = "none";
 };
 
+backFromBattle.onclick = () => {
+  mapSite.style.display = "block";
+  pokemonSite.style.display = "none";
+  battleSite.style.display = "none";
+  clearInterval(interval);
+};
+
 let interval;
 
 firstPokemon.onclick = () => {
@@ -83,7 +90,28 @@ firstPokemon.onclick = () => {
       myPokemonDeath.style.display = "block";
     }
   }, 500);
+
+  attackButton.onmousedown = () => {
+    attackButton.style.fontSize = "230%";
+    if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
+      myPokemon.style.left = "20%";
+      enemyHealth.innerHTML--;
+    }
+  
+    if (enemyHealth.innerHTML <= 0) {
+      battleInfo.innerHTML = "ENEMY DIED";
+      firstEnemyPokemonDeath.style.display = "block";
+      firstEnemyPokemon.style.display = "none";
+      clearInterval(interval);
+    }
+  };
+  
+  attackButton.onmouseup = () => {
+    myPokemon.style.left = "14%";
+    attackButton.style.fontSize = "250%";
+  };
 };
+
 
 secondPokemon.onclick = () => {
   pokemonSite.style.display = "none";
@@ -111,7 +139,28 @@ secondPokemon.onclick = () => {
       myPokemonDeath.style.display = "block";
     }
   }, 500);
+
+  attackButton.onmousedown = () => {
+    attackButton.style.fontSize = "230%";
+    if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
+      myPokemon.style.left = "20%";
+      enemyHealth.innerHTML--;
+    }
+  
+    if (enemyHealth.innerHTML <= 0) {
+      battleInfo.innerHTML = "ENEMY DIED";
+      secondEnemyPokemonDeath.style.display = "block";
+      secondEnemyPokemon.style.display = "none";
+      clearInterval(interval);
+    }
+  };
+  
+  attackButton.onmouseup = () => {
+    myPokemon.style.left = "14%";
+    attackButton.style.fontSize = "250%";
+  };
 };
+
 
 thirdPokemon.onclick = () => {
   pokemonSite.style.display = "none";
@@ -139,7 +188,28 @@ thirdPokemon.onclick = () => {
       myPokemonDeath.style.display = "block";
     }
   }, 500);
+
+  attackButton.onmousedown = () => {
+    attackButton.style.fontSize = "230%";
+    if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
+      myPokemon.style.left = "20%";
+      enemyHealth.innerHTML--;
+    }
+  
+    if (enemyHealth.innerHTML <= 0) {
+      battleInfo.innerHTML = "ENEMY DIED";
+      thirdEnemyPokemonDeath.style.display = "block";
+      thirdEnemyPokemon.style.display = "none";
+      clearInterval(interval);
+    }
+  };
+  
+  attackButton.onmouseup = () => {
+    myPokemon.style.left = "14%";
+    attackButton.style.fontSize = "250%";
+  };
 };
+
 
 bossPokemon.onclick = () => {
   pokemonSite.style.display = "none";
@@ -167,35 +237,24 @@ bossPokemon.onclick = () => {
       myPokemonDeath.style.display = "block";
     }
   }, 500);
-  if (enemyHealth.innerHTML <= 0) {
-    bossEnemyPokemonDeath.style.display = "block";
-    bossEnemyPokemon.style.display = "none";
-  }
-};
 
-// Battle Site
-
-attackButton.onmousedown = () => {
-  attackButton.style.fontSize = "230%";
-  if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
-    myPokemon.style.left = "20%";
-    enemyHealth.innerHTML--;
-  }
-
-  if (enemyHealth.innerHTML <= 0) {
-    battleInfo.innerHTML = "ENEMY DIED";
-    clearInterval(interval);
-  }
-};
-
-attackButton.onmouseup = () => {
-  myPokemon.style.left = "14%";
-  attackButton.style.fontSize = "250%";
-};
-
-backFromBattle.onclick = () => {
-  mapSite.style.display = "block";
-  pokemonSite.style.display = "none";
-  battleSite.style.display = "none";
-  clearInterval(interval);
+  attackButton.onmousedown = () => {
+    attackButton.style.fontSize = "230%";
+    if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
+      myPokemon.style.left = "20%";
+      enemyHealth.innerHTML--;
+    }
+  
+    if (enemyHealth.innerHTML <= 0) {
+      battleInfo.innerHTML = "ENEMY DIED";
+      bossEnemyPokemonDeath.style.display = "block";
+      bossEnemyPokemon.style.display = "none";
+      clearInterval(interval);
+    }
+  };
+  
+  attackButton.onmouseup = () => {
+    myPokemon.style.left = "14%";
+    attackButton.style.fontSize = "250%";
+  };
 };
