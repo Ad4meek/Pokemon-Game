@@ -89,7 +89,7 @@ firstPokemon.onclick = () => {
   attackButton.onmousedown = () => {
     attackButton.style.fontSize = "230%";
     if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
-      myPokemon.style.left = "20%";
+      myPokemon.style.left = "27%";
       enemyHealth.innerHTML--;
     }
   
@@ -102,7 +102,7 @@ firstPokemon.onclick = () => {
   };
   
   attackButton.onmouseup = () => {
-    myPokemon.style.left = "14%";
+    myPokemon.style.left = "22%";
     attackButton.style.fontSize = "250%";
   };
 };
@@ -139,7 +139,7 @@ secondPokemon.onclick = () => {
   attackButton.onmousedown = () => {
     attackButton.style.fontSize = "230%";
     if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
-      myPokemon.style.left = "20%";
+      myPokemon.style.left = "27%";
       enemyHealth.innerHTML--;
     }
   
@@ -152,7 +152,7 @@ secondPokemon.onclick = () => {
   };
   
   attackButton.onmouseup = () => {
-    myPokemon.style.left = "14%";
+    myPokemon.style.left = "22%";
     attackButton.style.fontSize = "250%";
   };
 };
@@ -189,7 +189,7 @@ thirdPokemon.onclick = () => {
   attackButton.onmousedown = () => {
     attackButton.style.fontSize = "230%";
     if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
-      myPokemon.style.left = "20%";
+      myPokemon.style.left = "27%";
       enemyHealth.innerHTML--;
     }
   
@@ -202,7 +202,7 @@ thirdPokemon.onclick = () => {
   };
   
   attackButton.onmouseup = () => {
-    myPokemon.style.left = "14%";
+    myPokemon.style.left = "22%";
     attackButton.style.fontSize = "250%";
   };
 };
@@ -239,7 +239,7 @@ bossPokemon.onclick = () => {
   attackButton.onmousedown = () => {
     attackButton.style.fontSize = "230%";
     if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
-      myPokemon.style.left = "20%";
+      myPokemon.style.left = "27%";
       enemyHealth.innerHTML--;
     }
   
@@ -252,7 +252,7 @@ bossPokemon.onclick = () => {
   };
   
   attackButton.onmouseup = () => {
-    myPokemon.style.left = "14%";
+    myPokemon.style.left = "22%";
     attackButton.style.fontSize = "250%";
   };
 };

@@ -160,8 +160,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 14%;
+  bottom: 15%;
+  left: 22%;
   height: 300px;
   width: 300px;
 }
@@ -172,8 +172,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 26%;
-  left: 16%;
+  bottom: 15%;
+  left: 25%;
   height: 300px;
   width: 300px;
 }
@@ -184,8 +184,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 66%;
+  bottom: 41%;
+  left: 56%;
   height: 300px;
   width: 300px;
 }
@@ -196,8 +196,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 66%;
+  bottom: 41%;
+  left: 56%;
   height: 300px;
   width: 300px;
 }
@@ -208,8 +208,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 66%;
+  bottom: 41%;
+  left: 56%;
   height: 300px;
   width: 300px;
 }
@@ -220,8 +220,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 66%;
+  bottom: 41%;
+  left: 56%;
   height: 300px;
   width: 300px;
 }
@@ -232,8 +232,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 66%;
+  bottom: 41%;
+  left: 56%;
   height: 300px;
   width: 300px;
 }
@@ -244,8 +244,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 66%;
+  bottom: 41%;
+  left: 56%;
   height: 300px;
   width: 300px;
 }
@@ -256,8 +256,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 66%;
+  bottom: 35%;
+  left: 56%;
   height: 300px;
   width: 300px;
 }
@@ -268,8 +268,8 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 31%;
-  left: 66%;
+  bottom: 35%;
+  left: 56%;
   height: 300px;
   width: 300px;
 }
@@ -277,9 +277,8 @@ body {
 
 #myHealth {
   position: absolute;
-  top: 80%;
-  left: 25%;
-  transform: translate(-25%, -80%);
+  top: 90%;
+  left: 30%;
   font-size: 200%;
   color: white;
   font-weight: 700;
@@ -287,9 +286,8 @@ body {
 
 #enemyHealth {
   position: absolute;
-  top: 80%;
-  left: 75%;
-  transform: translate(-75%, -80%);
+  top: 68%;
+  left: 63%;
   font-size: 200%;
   color: white;
   font-weight: 700;
@@ -299,7 +297,7 @@ body {
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translateX(-50%);
   border-radius: 50px;
   border: none;
   padding: 1rem 2rem;
@@ -313,7 +311,7 @@ body {
   font-size: 300%;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translateX(-50%);
 }
 
 #backFromBattle,
