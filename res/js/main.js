@@ -1,36 +1,48 @@
-const attackButton = document.getElementById("attackButton");
-const myPokemon = document.getElementById("myPokemon");
-const myPokemonDeath = document.getElementById("myPokemonDeath");
-const enemyPokemon = document.getElementById("enemyPokemon");
-const enemyPokemonDeath = document.getElementById("enemyPokemonDeath");
-const myHealth = document.getElementById("myHealth");
-const enemyHealth = document.getElementById("enemyHealth");
-const battleInfo = document.getElementById("battleInfo");
-
-const battleSite = document.getElementById("battleSite");
 const pokemonSite = document.getElementById("pokemonSite");
 const pokemon = document.getElementById("pokemon");
 const map = document.getElementById("map");
 const cp = document.getElementById("cp");
 const powerUp = document.getElementById("powerUp");
-const backFromBattle = document.getElementById("backFromBattle");
 
 const mapSite = document.getElementById("mapSite");
 const backFromMap = document.getElementById("backFromMap");
+const firstArrow = document.getElementById("firstArrow");
+const secondArrow = document.getElementById("secondArrow");
+const thirdArrow = document.getElementById("thirdArrow");
+const fourthArrow = document.getElementById("fourthArrow");
+const fifthArrow = document.getElementById("fifthArrow");
+const sixthArrow = document.getElementById("sixthArrow");
 const firstPokemon = document.getElementById("firstPokemon");
+const secondPokemon = document.getElementById("secondPokemon");
+const thirdPokemon = document.getElementById("thirdPokemon");
+const bossPokemon = document.getElementById("bossPokemon");
+const stardustChest = document.getElementById("stardustChest");
+
+const battleSite = document.getElementById("battleSite");
+
+const myPokemon = document.getElementById("myPokemon");
+const myPokemonDeath = document.getElementById("myPokemonDeath");
+const firstEnemyPokemon = document.getElementById("firstEnemyPokemon");
+const firstEnemyPokemonDeath = document.getElementById("firstEnemyPokemonDeath");
+const secondEnemyPokemon = document.getElementById("secondEnemyPokemon");
+const secondEnemyPokemonDeath = document.getElementById("secondEnemyPokemonDeath");
+const thirdEnemyPokemon = document.getElementById("thirdEnemyPokemon");
+const thirdEnemyPokemonDeath = document.getElementById("thirdEnemyPokemonDeath");
+const bossEnemyPokemon = document.getElementById("bossEnemyPokemon");
+const bossEnemyPokemonDeath = document.getElementById("bossEnemyPokemonDeath");
+const myHealth = document.getElementById("myHealth");
+const enemyHealth = document.getElementById("enemyHealth");
+const attackButton = document.getElementById("attackButton");
+const backFromBattle = document.getElementById("backFromBattle");
+const battleInfo = document.getElementById("battleInfo");
+
+// Map Site
 
 backFromMap.onclick = () => {
   mapSite.style.display = "none";
   pokemonSite.style.display = "block";
   battleSite.style.display = "none";
 }
-
-backFromBattle.onclick = () => {
-  mapSite.style.display = "block";
-  pokemonSite.style.display = "none";
-  battleSite.style.display = "none";
-  clearInterval(interval);
-};
 
 map.onclick = () => {
   pokemonSite.style.display = "none";
@@ -40,6 +52,7 @@ map.onclick = () => {
 
 let interval;
 
+
 firstPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
@@ -48,8 +61,8 @@ firstPokemon.onclick = () => {
   enemyHealth.innerHTML = 20;
   myPokemonDeath.style.display = "none";
   myPokemon.style.display = "block";
-  enemyPokemonDeath.style.display = "none";
-  enemyPokemon.style.display = "block";
+  firstEnemyPokemonDeath.style.display = "none";
+  firstEnemyPokemon.style.display = "block";
   battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
@@ -62,7 +75,73 @@ firstPokemon.onclick = () => {
   }, 500);
 };
 
-// Battle
+secondPokemon.onclick = () => {
+  pokemonSite.style.display = "none";
+  mapSite.style.display = "none";
+  battleSite.style.display = "block";
+  myHealth.innerHTML = 20;
+  enemyHealth.innerHTML = 20;
+  myPokemonDeath.style.display = "none";
+  myPokemon.style.display = "block";
+  secondEnemyPokemonDeath.style.display = "none";
+  secondEnemyPokemon.style.display = "block";
+  battleInfo.innerHTML = "";
+  interval = setInterval(() => {
+    myHealth.innerHTML--;
+    if (myHealth.innerHTML <= 0) {
+      battleInfo.innerHTML = "YOU DIED";
+      clearInterval(interval);
+      myPokemon.style.display = "none";
+      myPokemonDeath.style.display = "block";
+    }
+  }, 500);
+};
+
+thirdPokemon.onclick = () => {
+  pokemonSite.style.display = "none";
+  mapSite.style.display = "none";
+  battleSite.style.display = "block";
+  myHealth.innerHTML = 20;
+  enemyHealth.innerHTML = 20;
+  myPokemonDeath.style.display = "none";
+  myPokemon.style.display = "block";
+  thirdEnemyPokemonDeath.style.display = "none";
+  thirdEnemyPokemon.style.display = "block";
+  battleInfo.innerHTML = "";
+  interval = setInterval(() => {
+    myHealth.innerHTML--;
+    if (myHealth.innerHTML <= 0) {
+      battleInfo.innerHTML = "YOU DIED";
+      clearInterval(interval);
+      myPokemon.style.display = "none";
+      myPokemonDeath.style.display = "block";
+    }
+  }, 500);
+};
+
+bossPokemon.onclick = () => {
+  pokemonSite.style.display = "none";
+  mapSite.style.display = "none";
+  battleSite.style.display = "block";
+  myHealth.innerHTML = 20;
+  enemyHealth.innerHTML = 20;
+  myPokemonDeath.style.display = "none";
+  myPokemon.style.display = "block";
+  bossEnemyPokemonDeath.style.display = "none";
+  bossEnemyPokemon.style.display = "block";
+  battleInfo.innerHTML = "";
+  interval = setInterval(() => {
+    myHealth.innerHTML--;
+    if (myHealth.innerHTML <= 0) {
+      battleInfo.innerHTML = "YOU DIED";
+      clearInterval(interval);
+      myPokemon.style.display = "none";
+      myPokemonDeath.style.display = "block";
+    }
+  }, 500);
+};
+
+// Battle Site
 
 attackButton.onmousedown = () => {
   attackButton.style.fontSize = "230%";
@@ -74,12 +153,18 @@ attackButton.onmousedown = () => {
   if (enemyHealth.innerHTML <= 0) {
     battleInfo.innerHTML = "ENEMY DIED";
     clearInterval(interval);
-    enemyPokemon.style.display = "none";
-    enemyPokemonDeath.style.display = "block";
+    
   }
 };
 
 attackButton.onmouseup = () => {
   myPokemon.style.left = "14%";
   attackButton.style.fontSize = "250%";
+};
+
+backFromBattle.onclick = () => {
+  mapSite.style.display = "block";
+  pokemonSite.style.display = "none";
+  battleSite.style.display = "none";
+  clearInterval(interval);
 };

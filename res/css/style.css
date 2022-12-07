@@ -87,12 +87,56 @@ body {
 }
 
 #firstPokemon {
+  background: url("../img/ratata.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  top: 81%;
+  left: 23%;
+  height: 100px;
+  width: 100px;
+}
+
+#secondPokemon {
+  background: url("../img/snorlax.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  top: 52%;
+  left: 53%;
+  height: 100px;
+  width: 100px;
+}
+
+#thirdPokemon {
+  background: url("../img/dragonite.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  top: 72%;
+  left: 70%;
+  height: 100px;
+  width: 100px;
+}
+
+#bossPokemon {
   background: url("../img/mewtwo.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  top: 44%;
-  left: 18%;
+  top: 32%;
+  left: 93%;
+  height: 100px;
+  width: 100px;
+}
+
+#stardustChest {
+  background: url("../img/stardust.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  top: 5%;
+  left: 41%;
   height: 100px;
   width: 100px;
 }
@@ -134,9 +178,9 @@ body {
   width: 300px;
 }
 
-#enemyPokemon {
+#firstEnemyPokemon {
   display: block;
-  background: url("../img/mewtwo.png") no-repeat;
+  background: url("../img/ratata.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -146,9 +190,9 @@ body {
   width: 300px;
 }
 
-#enemyPokemonDeath {
+#firstEnemyPokemonDeath {
   display: none;
-  background: url("../img/mewtwoDeath.png") no-repeat;
+  background: url("../img/ratataDeath.png") no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -157,6 +201,79 @@ body {
   height: 300px;
   width: 300px;
 }
+
+#secondEnemyPokemon {
+  display: block;
+  background: url("../img/snorlax.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 31%;
+  left: 66%;
+  height: 300px;
+  width: 300px;
+}
+
+#secondEnemyPokemonDeath {
+  display: none;
+  background: url("../img/snorlaxDeath.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 31%;
+  left: 66%;
+  height: 300px;
+  width: 300px;
+}
+
+#firstEnemyPokemon {
+  display: block;
+  background: url("../img/ratata.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 31%;
+  left: 66%;
+  height: 300px;
+  width: 300px;
+}
+
+#firstEnemyPokemonDeath {
+  display: none;
+  background: url("../img/ratataDeath.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 31%;
+  left: 66%;
+  height: 300px;
+  width: 300px;
+}
+
+#firstEnemyPokemon {
+  display: block;
+  background: url("../img/ratata.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 31%;
+  left: 66%;
+  height: 300px;
+  width: 300px;
+}
+
+#firstEnemyPokemonDeath {
+  display: none;
+  background: url("../img/ratataDeath.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  position: absolute;
+  bottom: 31%;
+  left: 66%;
+  height: 300px;
+  width: 300px;
+}
+
 
 #myHealth {
   position: absolute;
