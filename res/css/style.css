@@ -145,7 +145,7 @@ body {
 
 #battleSite {
   display: none;
-  background: url("../img/battleSiteBackground.png");
+  background-image: url("../img/firstBattleSiteBackground.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

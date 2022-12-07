@@ -22,17 +22,11 @@ const battleSite = document.getElementById("battleSite");
 const myPokemon = document.getElementById("myPokemon");
 const myPokemonDeath = document.getElementById("myPokemonDeath");
 const firstEnemyPokemon = document.getElementById("firstEnemyPokemon");
-const firstEnemyPokemonDeath = document.getElementById(
-  "firstEnemyPokemonDeath"
-);
+const firstEnemyPokemonDeath = document.getElementById("firstEnemyPokemonDeath");
 const secondEnemyPokemon = document.getElementById("secondEnemyPokemon");
-const secondEnemyPokemonDeath = document.getElementById(
-  "secondEnemyPokemonDeath"
-);
+const secondEnemyPokemonDeath = document.getElementById("secondEnemyPokemonDeath");
 const thirdEnemyPokemon = document.getElementById("thirdEnemyPokemon");
-const thirdEnemyPokemonDeath = document.getElementById(
-  "thirdEnemyPokemonDeath"
-);
+const thirdEnemyPokemonDeath = document.getElementById("thirdEnemyPokemonDeath");
 const bossEnemyPokemon = document.getElementById("bossEnemyPokemon");
 const bossEnemyPokemonDeath = document.getElementById("bossEnemyPokemonDeath");
 const myHealth = document.getElementById("myHealth");
@@ -68,6 +62,7 @@ firstPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
+  battleSite.style.backgroundImage = "url('./res/img/firstBattleSiteBackground.png')";
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
   myPokemonDeath.style.display = "none";
@@ -117,6 +112,7 @@ secondPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
+  battleSite.style.backgroundImage = "url('./res/img/secondBattleSiteBackground.png')";
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
   myPokemonDeath.style.display = "none";
@@ -166,6 +162,7 @@ thirdPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
+  battleSite.style.backgroundImage = "url('./res/img/thirdBattleSiteBackground.png')";
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
   myPokemonDeath.style.display = "none";
@@ -215,6 +212,7 @@ bossPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
+  battleSite.style.backgroundImage = "url('./res/img/bossBattleSiteBackground.png')";
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
   myPokemonDeath.style.display = "none";
