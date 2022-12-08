@@ -6,16 +6,10 @@ const powerUp = document.getElementById("powerUp");
 
 const mapSite = document.getElementById("mapSite");
 const backFromMap = document.getElementById("backFromMap");
-const firstArrow = document.getElementById("firstArrow");
-const secondArrow = document.getElementById("secondArrow");
-const thirdArrow = document.getElementById("thirdArrow");
-const fourthArrow = document.getElementById("fourthArrow");
-const fifthArrow = document.getElementById("fifthArrow");
-const sixthArrow = document.getElementById("sixthArrow");
 const firstPokemon = document.getElementById("firstPokemon");
 const secondPokemon = document.getElementById("secondPokemon");
 const thirdPokemon = document.getElementById("thirdPokemon");
-const bossPokemon = document.getElementById("bossPokemon");
+const mewtwoPokemon = document.getElementById("mewtwoPokemon");
 const stardustChest = document.getElementById("stardustChest");
 
 const battleSite = document.getElementById("battleSite");
@@ -27,15 +21,14 @@ const secondEnemyPokemon = document.getElementById("secondEnemyPokemon");
 const secondEnemyPokemonDeath = document.getElementById("secondEnemyPokemonDeath");
 const thirdEnemyPokemon = document.getElementById("thirdEnemyPokemon");
 const thirdEnemyPokemonDeath = document.getElementById("thirdEnemyPokemonDeath");
-const bossEnemyPokemon = document.getElementById("bossEnemyPokemon");
-const bossEnemyPokemonDeath = document.getElementById("bossEnemyPokemonDeath");
+const mewtwoEnemyPokemon = document.getElementById("mewtwoEnemyPokemon");
+const mewtwoEnemyPokemonDeath = document.getElementById("mewtwoEnemyPokemonDeath");
 const myHealth = document.getElementById("myHealth");
 const enemyHealth = document.getElementById("enemyHealth");
 const attackButton = document.getElementById("attackButton");
 const backFromBattle = document.getElementById("backFromBattle");
 const battleInfo = document.getElementById("battleInfo");
 
-// Map Site
 
 backFromMap.onclick = () => {
   mapSite.style.display = "none";
@@ -58,7 +51,6 @@ backFromBattle.onclick = () => {
 
 let interval;
 
-
 firstPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
@@ -66,24 +58,18 @@ firstPokemon.onclick = () => {
   battleSite.style.backgroundImage = "url('./res/img/firstBattleSiteBackground.png')";
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
-  myPokemonDeath.style.display = "none";
   myPokemon.style.display = "block";
-  firstEnemyPokemonDeath.style.display = "none";
-  firstEnemyPokemon.style.display = "block";
-  secondEnemyPokemonDeath.style.display = "none";
+  firstEnemyPokemon.style.display = "block"; 
   secondEnemyPokemon.style.display = "none";
-  thirdEnemyPokemonDeath.style.display = "none";
   thirdEnemyPokemon.style.display = "none";
-  bossEnemyPokemonDeath.style.display = "none";
-  bossEnemyPokemon.style.display = "none";
+  mewtwoEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "YOU DIED";
       clearInterval(interval);
-      myPokemon.style.display = "none";
-      myPokemonDeath.style.display = "block";
+      myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
     }
   }, 500);
 
@@ -96,8 +82,7 @@ firstPokemon.onclick = () => {
   
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
-      firstEnemyPokemonDeath.style.display = "block";
-      firstEnemyPokemon.style.display = "none";
+      firstEnemyPokemon.style.backgroundImage = "url('./res/img/ratataDeath.png')";
       clearInterval(interval);
     }
   };
@@ -116,24 +101,18 @@ secondPokemon.onclick = () => {
   battleSite.style.backgroundImage = "url('./res/img/secondBattleSiteBackground.png')";
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
-  myPokemonDeath.style.display = "none";
   myPokemon.style.display = "block";
-  firstEnemyPokemonDeath.style.display = "none";
   firstEnemyPokemon.style.display = "none";
-  secondEnemyPokemonDeath.style.display = "none";
   secondEnemyPokemon.style.display = "block";
-  thirdEnemyPokemonDeath.style.display = "none";
   thirdEnemyPokemon.style.display = "none";
-  bossEnemyPokemonDeath.style.display = "none";
-  bossEnemyPokemon.style.display = "none";
+  mewtwoEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "YOU DIED";
       clearInterval(interval);
-      myPokemon.style.display = "none";
-      myPokemonDeath.style.display = "block";
+      myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
     }
   }, 500);
 
@@ -146,8 +125,7 @@ secondPokemon.onclick = () => {
   
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
-      secondEnemyPokemonDeath.style.display = "block";
-      secondEnemyPokemon.style.display = "none";
+      secondEnemyPokemon.style.backgroundImage = "url('./res/img/snorlaxDeath.png')";
       clearInterval(interval);
     }
   };
@@ -166,24 +144,18 @@ thirdPokemon.onclick = () => {
   battleSite.style.backgroundImage = "url('./res/img/thirdBattleSiteBackground.png')";
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
-  myPokemonDeath.style.display = "none";
   myPokemon.style.display = "block";
-  firstEnemyPokemonDeath.style.display = "none";
   firstEnemyPokemon.style.display = "none";
-  secondEnemyPokemonDeath.style.display = "none";
   secondEnemyPokemon.style.display = "none";
-  thirdEnemyPokemonDeath.style.display = "none";
-  thirdEnemyPokemon.style.display = "block";
-  bossEnemyPokemonDeath.style.display = "none";
-  bossEnemyPokemon.style.display = "none";
+  thirdEnemyPokemon.style.display = "block"
+  mewtwoEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "YOU DIED";
       clearInterval(interval);
-      myPokemon.style.display = "none";
-      myPokemonDeath.style.display = "block";
+      myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
     }
   }, 500);
 
@@ -196,8 +168,7 @@ thirdPokemon.onclick = () => {
   
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
-      thirdEnemyPokemonDeath.style.display = "block";
-      thirdEnemyPokemon.style.display = "none";
+      thirdEnemyPokemon.style.backgroundImage = "url('./res/img/dragoniteDeath.png')";
       clearInterval(interval);
     }
   };
@@ -209,31 +180,25 @@ thirdPokemon.onclick = () => {
 };
 
 
-bossPokemon.onclick = () => {
+mewtwoPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
-  battleSite.style.backgroundImage = "url('./res/img/bossBattleSiteBackground.png')";
+  battleSite.style.backgroundImage = "url('./res/img/mewtwoBattleSiteBackground.png')";
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
-  myPokemonDeath.style.display = "none";
   myPokemon.style.display = "block";
-  firstEnemyPokemonDeath.style.display = "none";
   firstEnemyPokemon.style.display = "none";
-  secondEnemyPokemonDeath.style.display = "none";
   secondEnemyPokemon.style.display = "none";
-  thirdEnemyPokemonDeath.style.display = "none";
   thirdEnemyPokemon.style.display = "none";
-  bossEnemyPokemonDeath.style.display = "none";
-  bossEnemyPokemon.style.display = "block";
+  mewtwoEnemyPokemon.style.display = "block";
   battleInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "YOU DIED";
       clearInterval(interval);
-      myPokemon.style.display = "none";
-      myPokemonDeath.style.display = "block";
+      myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
     }
   }, 500);
 
@@ -246,8 +211,7 @@ bossPokemon.onclick = () => {
   
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
-      bossEnemyPokemonDeath.style.display = "block";
-      bossEnemyPokemon.style.display = "none";
+      firstEnemyPokemon.style.backgroundImage = "url('./res/img/mewtwoDeath.png')";
       clearInterval(interval);
     }
   };

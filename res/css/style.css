@@ -15,7 +15,7 @@ body {
 
 #pokemonSite {
   display: block;
-  background: url("../img/pokemonSiteBackground.png");
+  background-image: url("../img/pokemonSiteBackground.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,7 +25,8 @@ body {
 }
 
 #pokemon {
-  background: url("../img/mainpikachu.png") no-repeat;
+  background-image: url("../img/mainpikachu.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -77,7 +78,7 @@ body {
 
 #mapSite {
   display: none;
-  background: url("../img/mapSiteBackground.png");
+  background-image: url("../img/mapSiteBackground.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -87,7 +88,8 @@ body {
 }
 
 #firstPokemon {
-  background: url("../img/ratata.png") no-repeat;
+  background-image: url("../img/ratata.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -98,7 +100,8 @@ body {
 }
 
 #secondPokemon {
-  background: url("../img/snorlax.png") no-repeat;
+  background-image: url("../img/snorlax.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -109,7 +112,8 @@ body {
 }
 
 #thirdPokemon {
-  background: url("../img/dragonite.png") no-repeat;
+  background-image: url("../img/dragonite.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -119,8 +123,9 @@ body {
   width: 100px;
 }
 
-#bossPokemon {
-  background: url("../img/mewtwo.png") no-repeat;
+#mewtwoPokemon {
+  background-image: url("../img/mewtwo.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -131,7 +136,8 @@ body {
 }
 
 #stardustChest {
-  background: url("../img/stardust.png") no-repeat;
+  background-image: url("../img/stardust.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -156,7 +162,8 @@ body {
 
 #myPokemon {
   display: block;
-  background: url("../img/pikachu.png") no-repeat;
+  background-image: url("../img/pikachu.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -168,7 +175,8 @@ body {
 
 #myPokemonDeath {
   display: none;
-  background: url("../img/pikachuDeath.png") no-repeat;
+  background-image: url("../img/pikachuDeath.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -180,19 +188,8 @@ body {
 
 #firstEnemyPokemon {
   display: none;
-  background: url("../img/ratata.png") no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  position: absolute;
-  bottom: 41%;
-  left: 56%;
-  height: 300px;
-  width: 300px;
-}
-
-#firstEnemyPokemonDeath {
-  display: none;
-  background: url("../img/ratataDeath.png") no-repeat;
+  background-image: url("../img/ratata.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -204,19 +201,8 @@ body {
 
 #secondEnemyPokemon {
   display: none;
-  background: url("../img/snorlax.png") no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  position: absolute;
-  bottom: 41%;
-  left: 56%;
-  height: 300px;
-  width: 300px;
-}
-
-#secondEnemyPokemonDeath {
-  display: none;
-  background: url("../img/snorlaxDeath.png") no-repeat;
+  background-image: url("../img/snorlax.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -228,7 +214,8 @@ body {
 
 #thirdEnemyPokemon {
   display: none;
-  background: url("../img/dragonite.png") no-repeat;
+  background-image: url("../img/dragonite.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
@@ -238,42 +225,18 @@ body {
   width: 300px;
 }
 
-#thirdEnemyPokemonDeath {
+#mewtwoEnemyPokemon {
   display: none;
-  background: url("../img/dragoniteDeath.png") no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  position: absolute;
-  bottom: 41%;
-  left: 56%;
-  height: 300px;
-  width: 300px;
-}
-
-#bossEnemyPokemon {
-  display: none;
-  background: url("../img/mewtwo.png") no-repeat;
+  background-image: url("../img/mewtwo.png");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: absolute;
   bottom: 35%;
   left: 56%;
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 500px;
 }
-
-#bossEnemyPokemonDeath {
-  display: none;
-  background: url("../img/mewtwoDeath.png") no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  position: absolute;
-  bottom: 35%;
-  left: 56%;
-  height: 300px;
-  width: 300px;
-}
-
 
 #myHealth {
   position: absolute;
