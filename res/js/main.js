@@ -59,8 +59,9 @@ firstPokemon.onclick = () => {
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
   myPokemon.style.display = "block";
+  myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
   firstEnemyPokemon.style.display = "block"; 
-  firstEnemyPokemon.style.backgroundImage = "url('./res/img/ratata.png')";
+  firstEnemyPokemon.style.backgroundImage = "url('./res/img/onix.png')";
   secondEnemyPokemon.style.display = "none";
   thirdEnemyPokemon.style.display = "none";
   fourthEnemyPokemon.style.display = "none";
@@ -83,7 +84,7 @@ firstPokemon.onclick = () => {
   
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
-      firstEnemyPokemon.style.backgroundImage = "url('./res/img/ratataDeath.png')";
+      firstEnemyPokemon.style.backgroundImage = "url('./res/img/onixDeath.png')";
       clearInterval(interval);
     }
   };
@@ -103,6 +104,7 @@ secondPokemon.onclick = () => {
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
   myPokemon.style.display = "block";
+  myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
   firstEnemyPokemon.style.display = "none";
   secondEnemyPokemon.style.display = "block";
   secondEnemyPokemon.style.backgroundImage = "url('./res/img/snorlax.png')";
@@ -147,6 +149,7 @@ thirdPokemon.onclick = () => {
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
   myPokemon.style.display = "block";
+  myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
   firstEnemyPokemon.style.display = "none";
   secondEnemyPokemon.style.display = "none";
   thirdEnemyPokemon.style.display = "block"
@@ -191,6 +194,7 @@ fourthPokemon.onclick = () => {
   myHealth.innerHTML = 20;
   enemyHealth.innerHTML = 20;
   myPokemon.style.display = "block";
+  myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
   firstEnemyPokemon.style.display = "none";
   secondEnemyPokemon.style.display = "none";
   thirdEnemyPokemon.style.display = "none";

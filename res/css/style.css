@@ -88,7 +88,7 @@ body {
 }
 
 #firstPokemon {
-  background-image: url("../img/ratata.png");
+  background-image: url("../img/onix.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -173,22 +173,9 @@ body {
   width: 300px;
 }
 
-#myPokemonDeath {
-  display: none;
-  background-image: url("../img/pikachuDeath.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  position: absolute;
-  bottom: 15%;
-  left: 25%;
-  height: 300px;
-  width: 300px;
-}
-
 #firstEnemyPokemon {
   display: none;
-  background-image: url("../img/ratata.png");
+  background-image: url("../img/onix.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
