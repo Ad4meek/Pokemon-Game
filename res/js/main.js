@@ -58,6 +58,7 @@ backFromBattle.onclick = () => {
 
 let interval;
 
+
 firstPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
