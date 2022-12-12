@@ -50,9 +50,9 @@ backFromMap.onclick = () => {
   pokemonSite.style.display = "block";
   battleSite.style.display = "none";
   if (numberOfStardust >= powerUpPrice) {
-    powerUp.style.color = "white"
+    powerUp.style.color = "white";
   } else {
-    powerUp.style.color = "#f36367"
+    powerUp.style.color = "#f36367";
   }
 };
 
@@ -72,14 +72,14 @@ backFromBattle.onclick = () => {
 
 powerUp.onclick = () => {
   if (numberOfStardust >= powerUpPrice) {
-    powerUp.style.color = "white"
+    powerUp.style.color = "white";
     numberOfCp += 20;
     numberOfStardust -= 10;
     stardust.innerHTML = `x ${numberOfStardust}`;
     cp.innerHTML = numberOfCp;
     powerUpPrice += 10;
   } else {
-    powerUp.style.color = "#f36367"
+    powerUp.style.color = "#f36367";
   }
   powerUp.innerHTML = `POWER UP x${powerUpPrice}`;
 };
