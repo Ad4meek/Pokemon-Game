@@ -18,32 +18,27 @@ const battleSite = document.getElementById("battleSite");
 const myPokemon = document.getElementById("myPokemon");
 const myPokemonDeath = document.getElementById("myPokemonDeath");
 const firstEnemyPokemon = document.getElementById("firstEnemyPokemon");
-const firstEnemyPokemonDeath = document.getElementById(
-  "firstEnemyPokemonDeath"
-);
+const firstEnemyPokemonDeath = document.getElementById("firstEnemyPokemonDeath");
 const secondEnemyPokemon = document.getElementById("secondEnemyPokemon");
-const secondEnemyPokemonDeath = document.getElementById(
-  "secondEnemyPokemonDeath"
-);
+const secondEnemyPokemonDeath = document.getElementById("secondEnemyPokemonDeath");
 const thirdEnemyPokemon = document.getElementById("thirdEnemyPokemon");
-const thirdEnemyPokemonDeath = document.getElementById(
-  "thirdEnemyPokemonDeath"
-);
+const thirdEnemyPokemonDeath = document.getElementById("thirdEnemyPokemonDeath");
 const fourthEnemyPokemon = document.getElementById("fourthEnemyPokemon");
-const fourthEnemyPokemonDeath = document.getElementById(
-  "fourthEnemyPokemonDeath"
-);
+const fourthEnemyPokemonDeath = document.getElementById("fourthEnemyPokemonDeath");
 const myHealth = document.getElementById("myHealth");
 const enemyHealth = document.getElementById("enemyHealth");
 const attackButton = document.getElementById("attackButton");
 const backFromBattle = document.getElementById("backFromBattle");
 const battleInfo = document.getElementById("battleInfo");
+const stardustInfo = document.getElementById("stardustInfo");
 
 let interval;
 
 let numberOfStardust = 0;
 let numberOfCp = 100;
 let powerUpPrice = 10;
+let damage = 1;
+let health = 20;
 
 backFromMap.onclick = () => {
   mapSite.style.display = "none";
@@ -67,6 +62,7 @@ backFromBattle.onclick = () => {
   mapSite.style.display = "block";
   pokemonSite.style.display = "none";
   battleSite.style.display = "none";
+  stardustChestInfo.innerHTML = "";
   clearInterval(interval);
 };
 
@@ -74,10 +70,13 @@ powerUp.onclick = () => {
   if (numberOfStardust >= powerUpPrice) {
     powerUp.style.color = "white";
     numberOfCp += 20;
-    numberOfStardust -= 10;
+    numberOfStardust -= powerUpPrice;
     stardust.innerHTML = `x ${numberOfStardust}`;
     cp.innerHTML = numberOfCp;
     powerUpPrice += 10;
+    damage += 1;
+    health += 5;
+    myHealth.innerHTML = health;
   } else {
     powerUp.style.color = "#f36367";
   }
@@ -94,10 +93,9 @@ firstPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
-  battleSite.style.backgroundImage =
-    "url('./res/img/firstBattleSiteBackground.png')";
-  myHealth.innerHTML = 20;
-  enemyHealth.innerHTML = 20;
+  battleSite.style.backgroundImage = "url('./res/img/firstBattleSiteBackground.png')";
+  myHealth.innerHTML = health;
+  enemyHealth.innerHTML = 50;
   myPokemon.style.display = "block";
   myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
   firstEnemyPokemon.style.display = "block";
@@ -106,6 +104,7 @@ firstPokemon.onclick = () => {
   thirdEnemyPokemon.style.display = "none";
   fourthEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
+  stardustInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
@@ -113,21 +112,21 @@ firstPokemon.onclick = () => {
       clearInterval(interval);
       myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
     }
-  }, 500);
+  }, 700);
 
   attackButton.onmousedown = () => {
     attackButton.style.fontSize = "230%";
     if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
       myPokemon.style.left = "27%";
-      enemyHealth.innerHTML--;
+      enemyHealth.innerHTML -= damage;
     }
 
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
+      stardustInfo.innerHTML = "YOU HAVE EARNED 10x STARDUST!";
       numberOfStardust += 10;
       stardust.innerHTML = `x${numberOfStardust}`;
-      firstEnemyPokemon.style.backgroundImage =
-        "url('./res/img/onixDeath.png')";
+      firstEnemyPokemon.style.backgroundImage = "url('./res/img/onixDeath.png')";
       clearInterval(interval);
     }
   };
@@ -142,10 +141,9 @@ secondPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
-  battleSite.style.backgroundImage =
-    "url('./res/img/secondBattleSiteBackground.png')";
-  myHealth.innerHTML = 20;
-  enemyHealth.innerHTML = 20;
+  battleSite.style.backgroundImage = "url('./res/img/secondBattleSiteBackground.png')";
+  myHealth.innerHTML = health;
+  enemyHealth.innerHTML = 200;
   myPokemon.style.display = "block";
   myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
   firstEnemyPokemon.style.display = "none";
@@ -154,6 +152,7 @@ secondPokemon.onclick = () => {
   thirdEnemyPokemon.style.display = "none";
   fourthEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
+  stardustInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
@@ -172,10 +171,10 @@ secondPokemon.onclick = () => {
 
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
+      stardustInfo.innerHTML = "YOU HAVE EARNED 10x STARDUST!";
       numberOfStardust += 10;
       stardust.innerHTML = `x${numberOfStardust}`;
-      secondEnemyPokemon.style.backgroundImage =
-        "url('./res/img/snorlaxDeath.png')";
+      secondEnemyPokemon.style.backgroundImage = "url('./res/img/snorlaxDeath.png')";
       clearInterval(interval);
     }
   };
@@ -190,10 +189,9 @@ thirdPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
-  battleSite.style.backgroundImage =
-    "url('./res/img/thirdBattleSiteBackground.png')";
-  myHealth.innerHTML = 20;
-  enemyHealth.innerHTML = 20;
+  battleSite.style.backgroundImage = "url('./res/img/thirdBattleSiteBackground.png')";
+  myHealth.innerHTML = health;
+  enemyHealth.innerHTML = 500;
   myPokemon.style.display = "block";
   myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
   firstEnemyPokemon.style.display = "none";
@@ -202,6 +200,7 @@ thirdPokemon.onclick = () => {
   thirdEnemyPokemon.style.backgroundImage = "url('./res/img/dragonite.png')";
   fourthEnemyPokemon.style.display = "none";
   battleInfo.innerHTML = "";
+  stardustInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
@@ -209,7 +208,7 @@ thirdPokemon.onclick = () => {
       clearInterval(interval);
       myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
     }
-  }, 500);
+  }, 300);
 
   attackButton.onmousedown = () => {
     attackButton.style.fontSize = "230%";
@@ -220,10 +219,10 @@ thirdPokemon.onclick = () => {
 
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
+      stardustInfo.innerHTML = "YOU HAVE EARNED 10x STARDUST!";
       numberOfStardust += 10;
       stardust.innerHTML = `x${numberOfStardust}`;
-      thirdEnemyPokemon.style.backgroundImage =
-        "url('./res/img/dragoniteDeath.png')";
+      thirdEnemyPokemon.style.backgroundImage = "url('./res/img/dragoniteDeath.png')";
       clearInterval(interval);
     }
   };
@@ -238,10 +237,9 @@ fourthPokemon.onclick = () => {
   pokemonSite.style.display = "none";
   mapSite.style.display = "none";
   battleSite.style.display = "block";
-  battleSite.style.backgroundImage =
-    "url('./res/img/fourthBattleSiteBackground.png')";
-  myHealth.innerHTML = 20;
-  enemyHealth.innerHTML = 20;
+  battleSite.style.backgroundImage = "url('./res/img/fourthBattleSiteBackground.png')";
+  myHealth.innerHTML = health;
+  enemyHealth.innerHTML = 1000;
   myPokemon.style.display = "block";
   myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
   firstEnemyPokemon.style.display = "none";
@@ -250,6 +248,7 @@ fourthPokemon.onclick = () => {
   fourthEnemyPokemon.style.display = "block";
   fourthEnemyPokemon.style.backgroundImage = "url('./res/img/mewtwo.png')";
   battleInfo.innerHTML = "";
+  stardustInfo.innerHTML = "";
   interval = setInterval(() => {
     myHealth.innerHTML--;
     if (myHealth.innerHTML <= 0) {
@@ -257,7 +256,7 @@ fourthPokemon.onclick = () => {
       clearInterval(interval);
       myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
     }
-  }, 500);
+  }, 100);
 
   attackButton.onmousedown = () => {
     attackButton.style.fontSize = "230%";
@@ -268,10 +267,10 @@ fourthPokemon.onclick = () => {
 
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
+      stardustInfo.innerHTML = "YOU HAVE EARNED 10x STARDUST!";
       numberOfStardust += 10;
       stardust.innerHTML = `x${numberOfStardust}`;
-      fourthEnemyPokemon.style.backgroundImage =
-        "url('./res/img/mewtwoDeath.png')";
+      fourthEnemyPokemon.style.backgroundImage = "url('./res/img/mewtwoDeath.png')";
       clearInterval(interval);
     }
   };

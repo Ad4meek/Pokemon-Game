@@ -9,6 +9,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 /* Pokemon Site */
@@ -59,7 +60,6 @@ body {
   border: none;
   color: white;
   font-size: 300%;
-  font-weight: 700;
 }
 
 .stardustImage {
@@ -80,7 +80,6 @@ body {
   left: 60%;
   color: white;
   font-size: 300%;
-  font-weight: 700;
 }
 
 #powerUp {
@@ -174,7 +173,6 @@ body {
   left: 32%;
   color: white;
   font-size: 300%;
-  font-weight: 700;
 }
 
 /* Battle Site */
@@ -261,7 +259,6 @@ body {
   left: 30%;
   font-size: 200%;
   color: white;
-  font-weight: 700;
 }
 
 #enemyHealth {
@@ -270,7 +267,6 @@ body {
   left: 63%;
   font-size: 200%;
   color: white;
-  font-weight: 700;
 }
 
 #attackButton {
@@ -288,10 +284,19 @@ body {
 
 #battleInfo {
   position: absolute;
-  font-size: 300%;
   top: 70%;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 300%;
+}
+
+#stardustInfo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 300%;
+  color: white;
 }
 
 #backFromBattle,
