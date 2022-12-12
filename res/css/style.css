@@ -54,9 +54,30 @@ body {
   color: black;
   position: absolute;
   top: 15%;
-  left: 23%;
+  left: 27%;
+  text-align: center;
   border: none;
-  padding: 1rem 2rem;
+  color: white;
+  font-size: 300%;
+  font-weight: 700;
+}
+
+.stardustImage {
+  background-image: url("../img/stardust.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 64%;
+  left: 69%;
+  height: 100px;
+  width: 100px;
+}
+
+#stardust {
+  position: absolute;
+  top: 67%;
+  left: 60%;
   color: white;
   font-size: 300%;
   font-weight: 700;
@@ -145,6 +166,15 @@ body {
   left: 41%;
   height: 100px;
   width: 100px;
+}
+
+#stardustChestInfo {
+  position: absolute;
+  top: 18%;
+  left: 32%;
+  color: white;
+  font-size: 300%;
+  font-weight: 700;
 }
 
 /* Battle Site */
