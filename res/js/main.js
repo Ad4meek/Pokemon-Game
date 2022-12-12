@@ -73,7 +73,7 @@ backFromBattle.onclick = () => {
 powerUp.onclick = () => {
   if (numberOfStardust >= powerUpPrice) {
     powerUp.style.color = "white"
-    numberOfCp += 50;
+    numberOfCp += 20;
     numberOfStardust -= 10;
     stardust.innerHTML = `x ${numberOfStardust}`;
     cp.innerHTML = numberOfCp;
