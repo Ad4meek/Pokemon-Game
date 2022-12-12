@@ -33,7 +33,7 @@ const battleInfo = document.getElementById("battleInfo");
 const stardustInfo = document.getElementById("stardustInfo");
 
 let interval;
-
+let stardustIsPicked = false
 let numberOfStardust = 0;
 let numberOfCp = 100;
 let powerUpPrice = 10;
@@ -84,9 +84,16 @@ powerUp.onclick = () => {
 };
 
 stardustChest.onclick = () => {
-  numberOfStardust += 100;
-  stardust.innerHTML = numberOfStardust;
-  stardustChestInfo.innerHTML = "You found Stardust!";
+  if (!stardustIsPicked) {
+    numberOfStardust += 100;
+    stardust.innerHTML = numberOfStardust;
+    stardustChestInfo.innerHTML = "YOU FOUND 100x STARDUST!";
+    stardustIsPicked = true
+  } else {
+    stardustChestInfo.innerHTML = "YOU ALREADY FOUND STARDUST!";
+    stardustChestInfo.style.color = "#f36367";
+    stardustChestInfo.style.left = "23%";
+  }
 };
 
 firstPokemon.onclick = () => {

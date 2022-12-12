@@ -47,7 +47,7 @@ body {
   border: none;
   padding: 1rem 2rem;
   color: white;
-  font-size: 250%;
+  font-size: 300%;
   background: linear-gradient(to right, #a2db95, #24ccaa);
 }
 
@@ -90,7 +90,7 @@ body {
   border: none;
   padding: 1rem 2rem;
   color: white;
-  font-size: 250%;
+  font-size: 300%;
   background: linear-gradient(to right, #a2db95, #24ccaa);
 }
 
@@ -111,7 +111,9 @@ body {
   background-image: url("../img/onix.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: center;
+  box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
   position: absolute;
   top: 81%;
   left: 23%;
@@ -123,7 +125,9 @@ body {
   background-image: url("../img/snorlax.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: center;
+  box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
   position: absolute;
   top: 52%;
   left: 53%;
@@ -135,7 +139,9 @@ body {
   background-image: url("../img/dragonite.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: center;
+  box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
   position: absolute;
   top: 72%;
   left: 70%;
@@ -147,7 +153,9 @@ body {
   background-image: url("../img/mewtwo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: center;
+  box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
   position: absolute;
   top: 32%;
   left: 93%;
@@ -159,7 +167,9 @@ body {
   background-image: url("../img/stardust.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: center;
+  box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
   position: absolute;
   top: 5%;
   left: 41%;
@@ -170,7 +180,7 @@ body {
 #stardustChestInfo {
   position: absolute;
   top: 18%;
-  left: 32%;
+  left: 30%;
   color: white;
   font-size: 300%;
 }
@@ -257,7 +267,7 @@ body {
   position: absolute;
   top: 90%;
   left: 30%;
-  font-size: 200%;
+  font-size: 300%;
   color: white;
 }
 
@@ -265,7 +275,7 @@ body {
   position: absolute;
   top: 68%;
   left: 63%;
-  font-size: 200%;
+  font-size: 300%;
   color: white;
 }
 
@@ -278,7 +288,7 @@ body {
   border: none;
   padding: 1rem 2rem;
   color: white;
-  font-size: 250%;
+  font-size: 300%;
   background: linear-gradient(to right, #a2db95, #24ccaa);
 }
 
@@ -309,6 +319,6 @@ body {
   border: none;
   padding: 1rem 2rem;
   color: white;
-  font-size: 250%;
+  font-size: 300%;
   background: linear-gradient(to right, #a2db95, #24ccaa);
 }
