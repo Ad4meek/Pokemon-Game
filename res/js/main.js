@@ -173,13 +173,13 @@ secondPokemon.onclick = () => {
     attackButton.style.fontSize = "230%";
     if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
       myPokemon.style.left = "27%";
-      enemyHealth.innerHTML--;
+      enemyHealth.innerHTML -= damage;
     }
 
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
-      stardustInfo.innerHTML = "YOU HAVE EARNED 10x STARDUST!";
-      numberOfStardust += 10;
+      stardustInfo.innerHTML = "YOU HAVE EARNED 20x STARDUST!";
+      numberOfStardust += 20;
       stardust.innerHTML = `x${numberOfStardust}`;
       secondEnemyPokemon.style.backgroundImage = "url('./res/img/snorlaxDeath.png')";
       clearInterval(interval);
@@ -221,13 +221,13 @@ thirdPokemon.onclick = () => {
     attackButton.style.fontSize = "230%";
     if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
       myPokemon.style.left = "27%";
-      enemyHealth.innerHTML--;
+      enemyHealth.innerHTML -= damage;
     }
 
     if (enemyHealth.innerHTML <= 0) {
       battleInfo.innerHTML = "ENEMY DIED";
-      stardustInfo.innerHTML = "YOU HAVE EARNED 10x STARDUST!";
-      numberOfStardust += 10;
+      stardustInfo.innerHTML = "YOU HAVE EARNED 50x STARDUST!";
+      numberOfStardust += 50;
       stardust.innerHTML = `x${numberOfStardust}`;
       thirdEnemyPokemon.style.backgroundImage = "url('./res/img/dragoniteDeath.png')";
       clearInterval(interval);
@@ -269,7 +269,7 @@ fourthPokemon.onclick = () => {
     attackButton.style.fontSize = "230%";
     if (myHealth.innerHTML > 0 && enemyHealth.innerHTML > 0) {
       myPokemon.style.left = "27%";
-      enemyHealth.innerHTML--;
+      enemyHealth.innerHTML -= damage;
     }
 
     if (enemyHealth.innerHTML <= 0) {
