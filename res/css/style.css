@@ -14,6 +14,24 @@ body {
 
 /* Pokemon Site */
 
+#lives {
+  position: absolute;
+  top: 82%;
+  left: 19%;
+  border: none;
+  color: white;
+  font-size: 300%;
+}
+
+#power {
+  position: absolute;
+  top: 87%;
+  left: 19%;
+  border: none;
+  color: white;
+  font-size: 300%;
+}
+
 #pokemonSite {
   display: block;
   background-image: url("../img/pokemonSiteBackground.png");
@@ -52,10 +70,9 @@ body {
 }
 
 #cp {
-  color: black;
   position: absolute;
   top: 15%;
-  left: 25%;
+  left: 23%;
   text-align: center;
   border: none;
   color: white;
@@ -107,8 +124,20 @@ body {
   position: relative;
 }
 
+#pikachu {
+  background-image: url("../img/mainpikachu.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 42%;
+  left: 11%;
+  height: 130px;
+  width: 130px;
+}
+
 #firstPokemon {
-  background-image: url("../img/onix.png");
+  background-image: url("../img/questionMark.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -122,7 +151,7 @@ body {
 }
 
 #secondPokemon {
-  background-image: url("../img/snorlax.png");
+  background-image: url("../img/questionMark.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -136,7 +165,7 @@ body {
 }
 
 #thirdPokemon {
-  background-image: url("../img/dragonite.png");
+  background-image: url("../img/questionMark.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -150,7 +179,7 @@ body {
 }
 
 #fourthPokemon {
-  background-image: url("../img/mewtwo.png");
+  background-image: url("../img/questionMark.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -164,7 +193,7 @@ body {
 }
 
 #stardustChest {
-  background-image: url("../img/stardust.png");
+  background-image: url("../img/questionMark.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -183,6 +212,16 @@ body {
   left: 30%;
   color: white;
   font-size: 300%;
+}
+
+#info {
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  transform: translateY(-50%);
+  color: #f7464c;
+  font-size: 300%;
+  transition: opacity 200ms;
 }
 
 /* Battle Site */
@@ -263,7 +302,7 @@ body {
   width: 500px;
 }
 
-#myHealth {
+#myLives {
   position: absolute;
   top: 90%;
   left: 30%;
@@ -271,7 +310,7 @@ body {
   color: white;
 }
 
-#enemyHealth {
+#enemyLives {
   position: absolute;
   top: 68%;
   left: 63%;
