@@ -108,7 +108,7 @@ firstPokemon.onclick = () => {
     battleSite.style.display = "block";
     battleSite.style.backgroundImage = "url('./res/img/firstBattleSiteBackground.png')";
     myLives.innerHTML = Lives;
-    enemyLives.innerHTML = 50;
+    enemyLives.innerHTML = 69;
     myPokemon.style.display = "block";
     myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
     firstEnemyPokemon.style.display = "block";
@@ -125,7 +125,7 @@ firstPokemon.onclick = () => {
         clearInterval(interval);
         myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
       }
-    }, 700);
+    }, 900);
 
     attackButton.onmousedown = () => {
       if (firstPokemonDeath) return;
@@ -189,7 +189,7 @@ secondPokemon.onclick = () => {
     battleSite.style.display = "block";
     battleSite.style.backgroundImage = "url('./res/img/secondBattleSiteBackground.png')";
     myLives.innerHTML = Lives;
-    enemyLives.innerHTML = 300;
+    enemyLives.innerHTML = 333;
     myPokemon.style.display = "block";
     myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
     firstEnemyPokemon.style.display = "none";
@@ -206,7 +206,7 @@ secondPokemon.onclick = () => {
         clearInterval(interval);
         myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
       }
-    }, 500);
+    }, 400);
 
     attackButton.onmousedown = () => {
       if (secondPokemonDeath) return;
@@ -219,8 +219,8 @@ secondPokemon.onclick = () => {
       if (enemyLives.innerHTML <= 0) {
         secondPokemonDeath = true;
         battleInfo.innerHTML = "ENEMY DIED";
-        stardustInfo.innerHTML = "YOU HAVE EARNED 20x STARDUST!";
-        numberOfStardust += 20;
+        stardustInfo.innerHTML = "YOU HAVE EARNED 50x STARDUST!";
+        numberOfStardust += 50;
         if (level === 2) level = 3;
         stardust.innerHTML = `x${numberOfStardust}`;
         secondEnemyPokemon.style.backgroundImage = "url('./res/img/snorlaxDeath.png')";
@@ -283,8 +283,8 @@ thirdPokemon.onclick = () => {
       if (enemyLives.innerHTML <= 0) {
         thirdPokemonDeath = true;
         battleInfo.innerHTML = "ENEMY DIED";
-        stardustInfo.innerHTML = "YOU HAVE EARNED 50x STARDUST!";
-        numberOfStardust += 50;
+        stardustInfo.innerHTML = "YOU HAVE EARNED 100x STARDUST!";
+        numberOfStardust += 100;
         if (level === 3) level = 4;
         stardust.innerHTML = `x${numberOfStardust}`;
         thirdEnemyPokemon.style.backgroundImage = "url('./res/img/dragoniteDeath.png')";
@@ -317,7 +317,7 @@ fourthPokemon.onclick = () => {
     battleSite.style.display = "block";
     battleSite.style.backgroundImage = "url('./res/img/fourthBattleSiteBackground.png')";
     myLives.innerHTML = Lives;
-    enemyLives.innerHTML = 690;
+    enemyLives.innerHTML = 666;
     myPokemon.style.display = "block";
     myPokemon.style.backgroundImage = "url('./res/img/pikachu.png')";
     firstEnemyPokemon.style.display = "none";
@@ -334,7 +334,7 @@ fourthPokemon.onclick = () => {
         clearInterval(interval);
         myPokemon.style.backgroundImage = "url('./res/img/pikachuDeath.png')";
       }
-    }, 100);
+    }, 200);
 
     attackButton.onmousedown = () => {
       if (fourthPokemonDeath) return;
